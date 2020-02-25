@@ -1,0 +1,9 @@
+<h1><%= @student.to_s %> information page</h1>
+<h2>First name</h2><br>
+<label><%= @student.first_name %></label>
+<br>
+<h2>Last name</h2><br>
+<label><%= @student.last_name %></label>
+<br>
+<%= button_to "Edit", edit_student_path, method: :get %>
+

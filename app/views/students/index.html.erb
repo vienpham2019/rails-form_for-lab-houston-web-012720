@@ -1,0 +1,9 @@
+
+<h1>Students list</h1>
+<% @students.each do |student| %> 
+    <%= link_to student.to_s, student_path(student) %>
+<% end %>
+<br>
+<%= button_to "Add new student",new_student_path, method: :get %>
+<br>
+<%= button_to "Classes page" , school_classes_path, method: :get %> 
